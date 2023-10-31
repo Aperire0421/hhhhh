@@ -449,37 +449,13 @@
       <!-- 标签云 -->
       <div id='tag_cloud' class="tags">
         
-        <a href="#Logging" title="Logging" rel="1">Logging</a>
-        
         <a href="#test" title="test" rel="2">test</a>
+        
+        <a href="#Logging" title="Logging" rel="1">Logging</a>
         
       </div>
 
       <!-- 标签列表 -->
-      
-      <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="Logging">
-          <span class="tag-text">Logging</span>
-        </span>
-        
-        <div class="post-preview">
-          <a href="/hhhhh/undefined/Our-Team/">
-            <h2 class="post-title">
-              Our Team
-              
-              -- undefined
-              
-            </h2>
-            
-            <h3 class="post-subtitle">
-              Traveling Frog
-            </h3>
-            
-          </a>
-        </div>
-        <hr>
-        
-      </div>
       
       <div class="one-tag-list">
         <span class="fa fa-tag listing-seperator" id="test">
@@ -520,6 +496,30 @@
         
       </div>
       
+      <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="Logging">
+          <span class="tag-text">Logging</span>
+        </span>
+        
+        <div class="post-preview">
+          <a href="/hhhhh/undefined/Our-Team/">
+            <h2 class="post-title">
+              Our Team
+              
+              -- undefined
+              
+            </h2>
+            
+            <h3 class="post-subtitle">
+              Traveling Frog
+            </h3>
+            
+          </a>
+        </div>
+        <hr>
+        
+      </div>
+      
 
     </div>
   </div>
@@ -529,6 +529,33 @@
 		<!-- Footer (contains ThemeColor、viewer) -->
 		<!-- Footer -->
 <footer>
+<div id="aplayer"></div>
+  <link rel="stylesheet" href="css/APlayer.min.css">
+  <script src="js/APlayer.min.js"></script>
+  <script>
+  var url = "https://v-vincen.life";
+  // var url = "http://localhost:4000/hhhhh";
+    const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      audio: [{
+        name: 'アナログライフ (模拟人生)',
+        artist: 'imase',
+        url: url + '/music/imase - アナログライフ (模拟人生).mp3',
+        cover: url + '/music/ZSY.jpg'
+      }, {
+        name: 'By My Side',
+        artist: 'Taka、illion',
+        url: url + '/music/Taka、illion - By My Side.mp3',
+        cover: url + '/music/ZSY.jpg'
+      }, {
+        name: 'April-Encounter',
+        artist: '很美味',
+        url: url + '/music/很美味-April-Encounter.mp3',
+        cover: url + '/music/ZSY.jpg'
+      }]
+    });
+  </script>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
